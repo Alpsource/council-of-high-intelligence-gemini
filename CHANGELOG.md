@@ -6,6 +6,12 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-05-11
+
+### Fixed
+- Pass resolved `extensionPath` explicitly in all TOML prompts — prevents intermittent agent file not found errors when `${extensionPath}` was unresolved inside SKILL.md body content
+- Added landing image and demo GIF to README
+
 ## [0.1.0] - 2026-05-10
 
 ### Added
@@ -37,5 +43,6 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Removed `council:` nested key from all 18 agent frontmatters — Gemini CLI agent loader only accepts `name` and `description`
 - Moved `mcpServers` out of the extension manifest into user-configured `~/.gemini/settings.json` — prevents unwanted MCP startup errors for users not using multi-provider mode
 
-[Unreleased]: https://github.com/Alpsource/council-of-high-intelligence-gemini/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/Alpsource/council-of-high-intelligence-gemini/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/Alpsource/council-of-high-intelligence-gemini/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/Alpsource/council-of-high-intelligence-gemini/releases/tag/v0.1.0
